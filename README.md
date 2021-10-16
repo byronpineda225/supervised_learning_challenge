@@ -26,8 +26,11 @@ You will be creating and comparing two models on this data: a logistic regressio
 # Fit a LogisticRegression model and RandomForestClassifier model
 Create a LogisticRegression model, fit it to the data, and print the model's score. Do the same for a RandomForestClassifier. You may choose any starting hyperparameters you like. Which model performed better? How does that compare to your prediction? Write down your results and thoughts.
 
+# Findings
+After running the models/scoring with the unscaled the logistic regression scored training score was 0.648440065681445 and the testing score was 0.5253083794130158 compared to the random forest classifier which had a training score of 1.0 and a testing score of 0.6180348787749894. In this case the forest classifier testing score was better than the logistic regression testing score namely .6180 versus .5253 with the unscaled data.
+
 # Revisit the Preprocessing: Scale the data
 The data going into these models was never scaled, an important step in preprocessing. Use StandardScaler to scale the training and testing sets. Before re-fitting the LogisticRegression and RandomForestClassifier models on the scaled data, make another prediction about how you think scaling will affect the accuracy of the models. Write your predictions down and provide justification.
 
-
-
+# Findings
+After running the models/scoring on the scaled data the logistic regression scored training score was 0.713136288998358 and the testing score was 0.7207571246278179 compared to the random forest classifier which had a training score of 1.0 and a testing score of 0.6193109315185028. The training/test scores for the random forest classifier was nearly identical to the previous test using unscaled data. In this case, the forest classifier testing score was not as good as the logistic regression testing score namely .6193 versus .7207 with the scaled data. The logistic regression training and testing scores were very close at .71 plus.
